@@ -10,6 +10,7 @@ task:
   env:
     matrix:
       - PGVERSION: 15
+      - PGVERSION: 15.6
   setup_script:
     - apt-get update
     - apt-get -y install curl gnupg lsb-release
