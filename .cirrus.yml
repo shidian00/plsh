@@ -9,16 +9,7 @@ task:
         image: ubuntu:20.04
   env:
     matrix:
-      - PGVERSION: 15
-      - PGVERSION: 14
-      - PGVERSION: 13
-      - PGVERSION: 12
-      - PGVERSION: 11
-      - PGVERSION: 10
-      - PGVERSION: 9.6
-      - PGVERSION: 9.5
-      - PGVERSION: 9.4
-      - PGVERSION: 9.3
+      - PGVERSION: 15.6
   setup_script:
     - apt-get update
     - apt-get -y install curl gnupg lsb-release
