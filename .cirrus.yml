@@ -6,10 +6,10 @@ task:
   name: Linux (Debian/Ubuntu)
   matrix:
     - container:
-        image: ubuntu:22.04
+        image: ubuntu:noble
   env:
     matrix:
-      - PGVERSION: 15.11
+      - PGVERSION: 15
   setup_script:
     - apt-get update
     - apt-get -y install curl gnupg lsb-release
