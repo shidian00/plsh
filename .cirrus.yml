@@ -9,9 +9,7 @@ task:
         image: ubuntu:22.04
   env:
     matrix:
-      - PGVERSION: 16
-      - PGVERSION: 15
-      - PGVERSION: 15.6
+      - PGVERSION: 15.11
   setup_script:
     - apt-get update
     - apt-get -y install curl gnupg lsb-release
